@@ -92,5 +92,11 @@ function takeCommand(message) {
     } else if (message.includes("what is web app") || message.includes("what is web apps") || message.includes("what is web application") || message.includes("what is web applications")) {
         speak("This is what I found on internet regarding your question");
         window.open("https://www.google.com/search?q=what+is+web+apps", "_blank");
+    } else if (message.includes("open Calculator")) {
+        speak("opening Calculator");
+        window.open("Calculator://");
+    } else if (message.includes("open vs code")) {
+        speak("opening Visual Studio Code");
+        window.open("Visual Studio Code://");
     }
 }}
